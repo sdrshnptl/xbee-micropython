@@ -33,5 +33,6 @@ uart = UART(1, 9600)
 while True:
     if uart.any() > 0:
         read_text = uart.read(uart.any())
+        # uart.print("Received:")
         uart.write(bytearray(read_text))
     time.sleep(0.1)

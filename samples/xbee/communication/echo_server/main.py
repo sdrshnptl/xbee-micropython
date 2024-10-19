@@ -43,4 +43,5 @@ while True:
         xbee.transmit(sender, payload)
 
     # Wait 100 ms before checking for data again.
-    time.sleep(0.1)
+    print("Hello")
+    time.sleep(1)
